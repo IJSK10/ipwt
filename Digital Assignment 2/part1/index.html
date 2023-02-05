@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css"> 
+    <script type="text/javascript" src="javascript.js"></script>
+    <title>Form</title>
+</head>
+<body>
+    <div class="a1">
+        <div class="a2">
+            <h3>Workshop Registration</h3>
+            <label for="act">More actions:</label>
+            <select name="cars" id="cars">
+            <option value="Website">Website</option>
+            <option value="Email">Email</option>
+            </select>
+        </div>
+        <div class="b1">
+            <a href="https://www.google.com/">Register now while seats are available!</a><br><br>
+            <form action="/action.php" method="post" onsubmit="return validate()">
+                <label for="fn">First name<span class="required">*</span></label>
+                <input type="text" name="fn" id="fn" required><br><br>
+                <label for="ln">Last name<span class="required">*</span></label>
+                <input type="text" name="ln" id="ln" required><br><br>
+                <label for="comp">Company/Institution<span class="required">*</span></label>
+                <input type="text" name="comp" id="comp" required><br><br>
+                <label for="add">Address<span class="required">*</span></label>
+                <input type="text" name="add" id="add" required><br><br>
+                <label for="st">State/Province/Region</label>
+                <input list="st" name="st">
+                <datalist id="st">
+                    <option value="Tamil Nadu">
+                    <option value="Kerala">
+                    <option value="Madhya Pradesh">
+                    <option value="Karnataka">
+                    <option value="Andhra Pradesh">
+                </datalist><br><br>
+                <label for="cn">Country</label>
+                <input list="cn" name="cn">
+                <datalist id="cn">
+                    <option value="India">
+                    <option value="USA">
+                    <option value="UK">
+                    <option value="France">
+                    <option value="Argentina">
+                </datalist><br><br>
+                <label for="em">Email id<span class="required">*</span></label>
+                <input type="text" name="em" id="em" required><br><br>
+                <label for="no">Phone Number<span class="required">*</span></label>
+                <input type="number" name="no" id="no" required><br><br>
+            </div>
+            <div class="b2">
+                <p>Meals preferred</p>
+                <label for="ml">Meals</label>
+                <input list="ml" name="ml">
+                <datalist id="ml">
+                    <option value="Vegetarian">
+                    <option value="Non-Vegetarian">
+                </datalist><br><br>
+                <p>Payment details</p>
+                <label for="html">Cash</label>
+                <input type="radio" id="p1" name="pay" value="p1"><br>
+                <label for="css">Cheque</label>
+                <input type="radio" id="p2" name="pay" value="p2"><br>
+                <label for="javascript">Demand draft</label>
+                <input type="radio" id="p3" name="pay" value="p3"><br><br>
+                <label for="dd">DD/Cheque No</label>
+                <input type="text" name="dd" id="dd"><br><br>
+                <label for="do">Drawn On (Bank Name)</label>
+                <input type="text" name="do" id="do"><br><br>
+                <label for="pa">Payable At</label>
+                <input type="text" name="pa" id="pa">
+            </div>
+            <div class="b3">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
