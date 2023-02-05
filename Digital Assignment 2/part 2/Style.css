@@ -1,0 +1,21 @@
+.a1
+{
+    position: relative;
+    margin: auto;
+    border: inset;
+    padding: 5px;
+    background-color:blueviolet;
+    height: 275px;
+    width: 250px;
+}
+input
+{
+    color:white;
+    background-color: darkorchid;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+::placeholder
+{
+    color:white;
+}
